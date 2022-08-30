@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer color="primary" v-model="drawer" absolute temporary>
+    <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title>HTML alapok</v-list-item-title>
@@ -27,19 +27,19 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-toolbar dense color="primary">
+    <v-toolbar dense color="accent">
       <v-btn icon dark @click.stop="drawer = !drawer">
-        <v-icon color="accent">mdi-menu</v-icon>
+        <v-icon color="primary">mdi-menu</v-icon>
       </v-btn>
 
-      <v-toolbar-title style="cursor: pointer" @click="$router.push('/')">
-        HTML alapok
+      <v-toolbar-title class="primary--text" style="cursor: pointer" @click="$router.push('/')">
+        Frontend alapok
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
       <v-btn @click="changeClr()" icon>
-        <v-icon color="accent">
+        <v-icon color="primary">
           {{
             currentColor == "light"
               ? "mdi-moon-waxing-crescent"
@@ -105,5 +105,12 @@ export default {
 <style>
 .v-toolbar {
   flex: 0 1 auto !important;
+}
+span{
+  text-align: center;
+}
+h1, h2{
+  
+  margin-top: 1rem;
 }
 </style>

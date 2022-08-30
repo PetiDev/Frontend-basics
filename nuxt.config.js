@@ -56,7 +56,7 @@ export default {
       light: false,
       themes: {
         dark: {
-          primary: "#2f3542",
+          primary: "#212121",
           accent: "#ffffff",
           secondary: "#ff4757",
           info: "#ff6348",
@@ -66,7 +66,7 @@ export default {
         },
         light: {
           primary: "#f1f2f6",
-          accent: "#2f3542",
+          accent: "#212121",
           secondary: "#ff4757",
           info: "#ff7f50",
           warning: "#eccc68",
