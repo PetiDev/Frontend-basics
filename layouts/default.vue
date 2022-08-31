@@ -72,14 +72,14 @@ export default {
         target: "/intro",
       },
       {
-        icon: "mdi-home",
-        title: "temp1",
-        target: "/",
+        icon: "mdi-numeric-1",
+        title: "A kezdetek",
+        target: "/first",
       },
       {
-        icon: "mdi-home",
-        title: "temp2",
-        target: "/",
+        icon: "mdi-numeric-2",
+        title: "Gyakran használt elemek",
+        target: "/second",
       },
       {
         icon: "mdi-home",
@@ -106,11 +106,29 @@ export default {
 .v-toolbar {
   flex: 0 1 auto !important;
 }
-span{
+
+span, h1, h2{
   text-align: center;
 }
 h1, h2{
   
   margin-top: 1rem;
+}
+section{
+  position: relative;
+}
+section::after{
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #ff4757;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+code{
+    color: #ffffff !important;
+    background-color: #2a2a2a !important;
+    text-align: left;
 }
 </style>

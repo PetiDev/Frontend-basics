@@ -40,6 +40,9 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    ['nuxt-highlightjs', {
+      style: 'atom-one-dark'
+    }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
