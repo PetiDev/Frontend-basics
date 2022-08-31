@@ -27,19 +27,19 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-toolbar dense color="accent">
+    <v-toolbar dense color="primary">
       <v-btn icon dark @click.stop="drawer = !drawer">
-        <v-icon color="primary">mdi-menu</v-icon>
+        <v-icon color="accent">mdi-menu</v-icon>
       </v-btn>
 
-      <v-toolbar-title class="primary--text" style="cursor: pointer" @click="$router.push('/')">
+      <v-toolbar-title class="accent--text" style="cursor: pointer" @click="$router.push('/')">
         Frontend alapok
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
       <v-btn @click="changeClr()" icon>
-        <v-icon color="primary">
+        <v-icon color="accent">
           {{
             currentColor == "light"
               ? "mdi-moon-waxing-crescent"
@@ -72,17 +72,17 @@ export default {
         target: "/intro",
       },
       {
-        icon: "mdi-numeric-1",
+        icon: "mdi-roman-numeral-1",
         title: "A kezdetek",
         target: "/first",
       },
       {
-        icon: "mdi-numeric-2",
+        icon: "mdi-roman-numeral-2",
         title: "Gyakran használt elemek",
         target: "/second",
       },
       {
-        icon: "mdi-home",
+        icon: "mdi-roman-numeral-3",
         title: "temp3",
         target: "/inspire",
       },

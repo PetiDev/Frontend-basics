@@ -3,6 +3,9 @@
     
     <h1>Köszöntelek a fronend alapok kurzuson</h1>
     <p>A kurzus célja hogy megértsd a HTML-t és CSS-t kezdő szinten</p>
+
+
+
     <section>
       <h2>Ajánlott:</h2>
       <sub>Én ezeket fogom használni</sub>
@@ -13,6 +16,12 @@
         <li>Valami zene amit szeretsz mert szét unod magad</li>
       </ul>
     </section>
+    <blockquote>
+  “First, solve the problem. Then, write the code.”
+  <footer>
+    <em>—John Johnson</em>
+  </footer>
+</blockquote>
   </v-container>
 </template>
 
@@ -22,3 +31,9 @@ export default {
   
 }
 </script>
+
+<style scoped>
+blockquote{
+  margin-top: 1rem;
+}
+</style>
