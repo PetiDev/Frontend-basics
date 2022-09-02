@@ -1,12 +1,19 @@
 <template>
   <v-container>
     <h1>A kezdetek</h1>
-
+<section>
+  <h2>File</h2>
+  <h3>HTML</h3>
+  <p>A HTML fileok kiterjesztése <b>.html</b></p>
+  <p>Akárminek hívhatjuk a file-t, de a böngészők alapértelmezetten az <b>index.html </b> file-t nyitják meg</p>
+  <h3>CSS</h3>
+  <p>A CSS file-ok kitejesztése kreatívan <b>.css</b></p>
+</section>
 <section>
     <h2>Tag-ek</h2>
     <h3>Felépítés</h3>
     <p>Általában egy nyitó és egy záró elemből állnak</p>
-    <p>Van néhány kivétel mint például a <b>input</b>, <b>link</b>, stb.</p>
+    <p>Van néhány kivétel mint például a <b>input</b>, <b>link</b>, <b>img</b>, stb.</p>
     <h3>Hogyan néz ki?</h3>
     <p>&#60;tagneve>  &#60;/tagneve></p>
     <p>&#60;nyitó>  &#60;/záró></p>
