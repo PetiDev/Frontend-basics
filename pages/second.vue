@@ -22,6 +22,9 @@ export default {
         ans:["html"]
       },
       {
+        text:"<head>"
+      },
+      {
         text:"< title > Az oldal címe <INPUT6c>",
         ans:["/title"]
       },
