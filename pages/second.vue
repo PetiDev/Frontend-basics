@@ -4,64 +4,48 @@
 
     <tagIntroCard v-for="tag in tags" :key="tag.title" :data="tag" />
 
-    <section>
-      <h2>Feladat a leckéhez</h2>
-      <div>
-        <label for="a">A legkisebb szintű fejléc: </label>
-        <input class="accent--text" type="text" maxlength="4" id="a" />
-        <pre>
-          <span>
-&#60; <input class="accent--text"  type="text" maxlength="4" id="g"> &#62;
-&#60; head &#62;
-&#60; title &#62; Az oldal címe &#60; <input class="accent--text"  type="text" maxlength="6" id="b"> &#62;
-&#60; /head &#62;
-&#60; body &#62;
-&#60; <input class="accent--text"  type="text" maxlength="2" id="c"> &#62; Egyes szintű címsor &#60; <input class="accent--text"  type="text" maxlength="3" id="d"> &#62;
-
-&#60; <input class="accent--text"  type="text" maxlength="1" id="e"> &#62; Ez egy bekezdés &#60; <input class="accent--text"  type="text" maxlength="2" id="f"> &#62;
-
-&#60; /body &#62;
-&#60; /html &#62;
-          </span>
-        </pre>
-        <v-btn color="success" @click.stop="check(['a','g','b','c','d','e','f'],['h6|<h6>','html','/title','h1','/h1','p','/p'])"><b id="pointScreen"></b> - Kész <v-icon>mdi-check</v-icon></v-btn>
-        
-      </div>
-
-    </section>
+    <questions :data="questionList" />
   </v-container>
 </template>
 
 <script>
 export default {
-  methods: {
-    copy(text) {
-      navigator.clipboard.writeText(text);
-    },
-    check(tasks, answers){
-      let pointScreen = document.getElementById("pointScreen")
-      let points = 0
-      for (let x = 0; x < tasks.length; x++) {
-        const taskID = tasks[x];
-        let task = document.getElementById(taskID)
-        let userAns = task.value.toLowerCase()
-        let ans = answers[x].split('|')
-
-        for(let y = 0; y < ans.length; y++){
-          if (userAns == ans[y]) {
-            task.classList += " right"
-            points++
-            break
-          }
-        }
-        task.classList += " wrong";
-
-      }
-    pointScreen.innerText = `${points} / ${tasks.length}`
-
-    }
-  },
   data: () => ({
+    points : '',
+    questionList: [
+      {
+        text:"A legkisebb szintű fejléc: INPUT4a",
+        ans:["h6|<h6>"]
+      },
+      {
+        text:"<INPUT4b>",
+        ans:["html"]
+      },
+      {
+        text:"< title > Az oldal címe <INPUT6c>",
+        ans:["/title"]
+      },
+      {
+        text:"</head>"
+      },
+      {
+        text:"<body>"
+      },
+      {
+        text:"<INPUT2d> Egyes szintű címsor <INPUT3e>",
+        ans: ["h1","/h1"]
+      },
+      {
+        text:"<INPUT1f> Ez egy bekezdés <INPUT2g>",
+        ans: ["p","/p"]
+      },
+      {
+        text:"</body>"
+      },
+      {
+        text:"</html>"
+      },
+    ],
     tags: [
       {
         title: "p - paragraph",
@@ -151,37 +135,3 @@ export default {
   }),
 };
 </script>
-
-<style>
-input{
-  border-bottom: 2px solid white;
-  text-align: center;
-}
-.wrong{
-  border-bottom: 2px solid red;
-  color: red;
-}
-.right{
-  border-bottom: 2px solid greenyellow;
-}
-
-input[maxlength="6"]{
-  width: 6ch
-}
-input[maxlength="5"]{
-  width: 5ch
-}
-input[maxlength="4"]{
-  width: 4ch
-}
-input[maxlength="3"]{
-  width: 3ch
-}
-input[maxlength="2"]{
-  width: 2ch
-}
-input[maxlength="1"]{
-  width: 1ch
-}
-
-</style>
