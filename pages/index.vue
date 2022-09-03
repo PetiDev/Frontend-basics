@@ -4,10 +4,13 @@
     <h1>Köszöntelek a fronend alapok kurzuson</h1>
     <p>A kurzus célja hogy megértsd a HTML-t és CSS-t kezdő szinten</p>
 
-
-
+  <v-alert type="error">
+    <h2><v-icon>mdi-exclamation-thick</v-icon>Figyelem<v-icon>mdi-exclamation-thick</v-icon></h2>
+    <p>Az oldal jelenlegileg is készítés alatt áll</p>
+    <p>Az iskola miatt a fejlesztés üteme lelassult</p>
+  </v-alert>
     <section>
-      <h2>Ajánlott:</h2>
+      <h2>Ajánlott: </h2>
       <sub>Én ezeket fogom használni</sub>
       <ul>
         <li>PC</li>
@@ -33,6 +36,9 @@ export default {
 </script>
 
 <style scoped>
+p{
+  text-align: center;
+}
 blockquote{
   margin-top: 1rem;
 }
