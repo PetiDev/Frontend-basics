@@ -1,7 +1,7 @@
 <template>
   <v-container>
     
-    <h1>Köszöntelek a fronend alapok kurzuson</h1>
+    <h1>Köszöntelek a frontend alapok kurzuson</h1>
     <p>A kurzus célja hogy megértsd a HTML-t és CSS-t kezdő szinten</p>
 
   <v-alert type="error">

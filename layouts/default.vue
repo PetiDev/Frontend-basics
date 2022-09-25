@@ -78,13 +78,18 @@ export default {
       },
       {
         icon: "mdi-roman-numeral-2",
-        title: "Gyakran használt elemek",
+        title: "Gyakori HTML elemek",
         target: "/second",
       },
       {
-        icon: "mdi-roman-numeral-3",
-        title: "temp3",
-        target: "/inspire",
+        icon: "mdi-roman-numeral-1",
+        title: "CSS",
+        target: "/third",
+      },
+      {
+        icon: "mdi-roman-numeral-2",
+        title: "Formázások",
+        target: "/fourth",
       },
     ],
   }),
