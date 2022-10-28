@@ -74,22 +74,27 @@ export default {
       {
         icon: "mdi-roman-numeral-1",
         title: "A kezdetek",
-        target: "/first",
+        target: "/html/intro",
       },
       {
         icon: "mdi-roman-numeral-2",
         title: "Gyakori HTML elemek",
-        target: "/second",
+        target: "/html/basic",
+      },
+      {
+        icon: "mdi-roman-numeral-3",
+        title: "Inputok",
+        target: "/html/inputs",
       },
       {
         icon: "mdi-roman-numeral-1",
         title: "CSS",
-        target: "/third",
+        target: "/css/intro",
       },
       {
         icon: "mdi-roman-numeral-2",
         title: "Formázások",
-        target: "/fourth",
+        target: "/css/basic",
       },
     ],
   }),

@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2>{{ data.title }}</h2>
-    <p v-for="p in data.description" :key="p.text" :style="`color:${p?.color}`">
+    <p v-for="p in data.description" :key="p.text" :style="`color:${p?.color}; font-size:${p?.fontSize};${(p?.bold)?'font-weight: bold;':''} ${(p?.inline)?'display: inline-block; padding-right: 1ch;':''}`">
       {{ p.text }}
     </p>
     <span class="wrap">
