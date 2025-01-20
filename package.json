@@ -11,7 +11,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.19.3",
-    "nuxt": "^3.15.1",
+    "nuxt": "^3.15.2",
     "nuxt-highlightjs": "^1.0.3",
     "vue": "^3.5.13",
     "vue-server-renderer": "^2.6.14",
